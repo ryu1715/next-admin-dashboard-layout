@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import { useIsSidebarOpenStateMutator } from "@/features/store/sidebar/isSidebarOpen";
+import { useEffect } from "react";
 
 type Props = {
   children: React.ReactNode;
