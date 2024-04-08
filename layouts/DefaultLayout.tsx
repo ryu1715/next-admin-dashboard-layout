@@ -13,7 +13,7 @@ export default function DefaultLayout({ children }: Props) {
         <title>charts-sample</title>
       </Head>
 
-      <div className={"flex h-100vh text-white"}>
+      <div className={"flex min-h-100vh text-white"}>
         <Sidebar />
         <div className={"flex flex-col flex-grow bg-gray-800"}>
           <Header />
