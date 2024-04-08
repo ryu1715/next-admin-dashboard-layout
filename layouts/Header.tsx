@@ -7,7 +7,7 @@ export default function Header() {
   const { toggleIsSidebarOpen } = useIsSidebarOpenStateMutator();
 
   return (
-    <header className="h-88 flex justify-between items-center p-2">
+    <header className="h-88 flex justify-between items-center p-20">
       <button className="cursor-pointer" onClick={() => toggleIsSidebarOpen()}>
         <RxHamburgerMenu />
       </button>
