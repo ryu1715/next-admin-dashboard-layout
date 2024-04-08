@@ -1,11 +1,6 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./layouts/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       scale: {
@@ -203,6 +198,8 @@ const config: Config = {
       auto: "auto",
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
 };
-export default config;
